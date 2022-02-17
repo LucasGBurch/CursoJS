@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Script</title>
+    <style>
+        body {
+            background-color: lightsteelblue;
+            color: black;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo para JavaScript</h1>
+    <p>Arquivo para começar JS.</p>
+    <!--JS vai depois de html (internamente falando)-->
+    <script>
+        var n1 = window.prompt('Digite um número: ') // String
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // number
+        // só o + Acaba concatenando em vez de somar
+
+        var soma = Number.parseInt(n1) + n2
+        window.alert('A soma dos números é ' + soma + '.')
+
+        // Vamos mostrar com template string (novidade recente, usa ``):
+
+        window.alert(`Com template string:
+        A soma entre ${n1} e ${n2} é igual à ${soma}.`)
+
+        /* O correto é fazer o parse e colocar o prompt dentro!!
+        Para decimais, parseFloat
+
+        Podemos fazer só Number(n) também, mas quem vai definir
+        se vai ser int ou float é o próprio JS
+
+        Número para string pode ser: n.toString ou String(n)
+
+        (number + number) para adição
+        (string + string) para concatenação */
+    </script>
+</body>
+</html>

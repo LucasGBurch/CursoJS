@@ -18,13 +18,10 @@
     <p>Arquivo para começar JS.</p>
     <!--JS vai depois de html (internamente falando)-->
     <script>
-        window.alert('Primeira mensagem em JS.')
-        /* window é opcional, estilo carrega antes, janela depois
-        e aí só depois da dar ok na janela carrega o html
-        JS é INTERATIVIDADE! */
-
-        window.confirm('Está gostando de JS?')
-        window.prompt('Insira seu nome:')
+        var nome = window.prompt('Insira seu nome:')
+        // var (em outros escopos pode ser let) nome receberá o resultado do Prompt
+        // Concatenando:
+        window.alert('Prazer em conhecer você, ' + nome + '!')
     </script>
 </body>
 </html>
