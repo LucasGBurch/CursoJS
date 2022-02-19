@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Em que Nação você nasceu?</h1>
+    Nome do País: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Ler" onclick="leitor()">
+    <div id="res">
+
+    </div>
+    <script>
+        function leitor() {
+            var pais = String(document.querySelector('input#txtpais').value)
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Você nasceu em: <strong>${pais}!</strong></p>`
+            if (pais != 'Brasil' && pais != 'Brazil') { // Adicionei operador lógico ao exercício
+                res.innerHTML += `<p>Você é Estrangeiro.</p>`
+            } else {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
+            } // acrescentando os parágrafos ao html da div de id 'res'
+        }
+    </script>
+</body>
+</html>
