@@ -35,7 +35,7 @@ function contar() { // usando let em vez de var, elas deixam de existir após a 
                 res.innerHTML += `${inicio} 👉`
                 inicio -= passo
             }
-            res.innerHTML += `🚩`
+            res.innerHTML += `🏁`
         } else {
             res.innerHTML = `Digite Início e Fim diferentes!`
         }   
