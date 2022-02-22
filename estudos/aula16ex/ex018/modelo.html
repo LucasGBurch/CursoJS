@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Array e Function</title>
+    <link rel="stylesheet" href="style.css">
+</head> <!--ESTE É O MODELO PARA OS EXERCÍCIOS DO CURSO!!-->
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section id="secao">
+        <div id="dados">
+            <p>Digite um número entre 1 e 100 sem repetir:</p>
+            <p> <input type="number" name="txtnum" id="txtnum"> 
+                <input type="button" value="Adicionar" onclick="adicionar(txtnum)">
+            </p>
+            <p><input type="button" value="Finalizar" onclick="finalizar(vetor)"></p>
+            <select name="lista" id="lista" size="8">
+                <!--Options todas no JS com aumento do atributo size!-->
+            </select>
+        </div>
+        <div id="res">
+        </div>
+    </section>
+
+    <footer><p>&copy; CursoemVídeo</p></footer>
+    <script src="script.js"> // ctrl + clique permite criar.
+    // Criando Script em outro arquivo (tipo estilos .css)
+    </script>
+</body>
+</html>
